@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Career Path Explorer</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+    ul { list-style-type: none; margin-left: 20px; padding-left: 0; }
+    li { margin: 5px 0; cursor: pointer; }
+    .nested { display: none; }
+    .active { display: block; }
+    .toggle::before { content: "▶ "; }
+    .toggle.expanded::before { content: "▼ "; }
+  </style>
+</head>
+<body>
+
+<h1>Career Path Explorer</h1>
+<div id="tree-container"></div>
+
+<script>
+function createTreeElement(obj) {
+  const ul = document.createElement('ul');
+  for (const key in obj) {
+    const li = document.createElement('li');
+    li.textContent = key;
+    li.classList.add('toggle');
+    const child = obj[key];
+    if (typeof child === 'object') {
+      const nested = createTreeElement(child);
+      nested.classList.add('nested');
+      li.onclick = function(e) {
+        e.stopPropagation();
+        nested.classList.toggle('active');
+        li.classList.toggle('expanded');
+      };
+      li.appendChild(nested);
+    }
+    ul.appendChild(li);
+  }
+  return ul;
+}
+
+fetch('career_tree.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('tree-container');
+    container.appendChild(createTreeElement(data));
+  });
+</script>
+
+</body>
+</html>

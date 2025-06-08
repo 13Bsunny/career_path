@@ -1,0 +1,116 @@
+{
+  "Science (PCM)": {
+    "Math": {
+      "B.Tech (Computer Science)": [
+        "Software Developer",
+        "App Developer",
+        "Data Scientist"
+      ],
+      "B.Sc (Mathematics)": [
+        "Mathematician",
+        "Data Analyst",
+        "Researcher"
+      ]
+    },
+    "Physics": {
+      "B.Tech (Mechanical)": [
+        "Mechanical Engineer",
+        "Design Engineer"
+      ],
+      "B.Tech (Electrical)": [
+        "Electrical Engineer",
+        "Power Systems Engineer"
+      ]
+    },
+    "Computer Science": {
+      "BCA": [
+        "Software Developer",
+        "QA Tester"
+      ],
+      "B.Sc (CS)": [
+        "Programmer",
+        "Cyber Security Analyst"
+      ]
+    }
+  },
+  "Science (PCB)": {
+    "Biology": {
+      "MBBS": [
+        "Doctor",
+        "Surgeon"
+      ],
+      "BDS": [
+        "Dentist"
+      ],
+      "B.Sc (Biotech)": [
+        "Biotechnologist",
+        "Lab Researcher"
+      ]
+    }
+  },
+  "Commerce": {
+    "Accounting": {
+      "B.Com": [
+        "Accountant",
+        "Auditor"
+      ],
+      "CA": [
+        "Chartered Accountant"
+      ]
+    },
+    "Business Studies": {
+      "BBA": [
+        "Business Manager",
+        "Marketing Executive"
+      ]
+    },
+    "Economics": {
+      "BA Economics": [
+        "Economist",
+        "Policy Analyst"
+      ]
+    }
+  },
+  "Arts/Humanities": {
+    "History": {
+      "BA History": [
+        "Historian",
+        "Civil Services"
+      ],
+      "BA Political Science": [
+        "Political Analyst",
+        "UPSC"
+      ]
+    },
+    "Psychology": {
+      "BA Psychology": [
+        "Psychologist",
+        "Counselor"
+      ]
+    },
+    "Sociology": {
+      "BA Sociology": [
+        "Social Worker",
+        "NGO Worker"
+      ]
+    }
+  },
+  "Vocational": {
+    "IT": {
+      "B.Voc (IT)": [
+        "IT Technician",
+        "Network Assistant"
+      ],
+      "BCA": [
+        "Software Support",
+        "Junior Developer"
+      ]
+    },
+    "Electrical": {
+      "B.Voc (Electrical)": [
+        "Electrical Technician",
+        "Maintenance Engineer"
+      ]
+    }
+  }
+}
